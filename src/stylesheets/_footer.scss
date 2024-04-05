@@ -1,0 +1,192 @@
+.footer{
+    &__cover{
+        
+        
+&_general{
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+&_general-text{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+&_general-text-sec{
+    color: $SecondaryColor;
+}
+&_general-triangle-img{
+    @include triangle;
+    position: static;
+}
+
+&_general-triangle-text{
+@include triangle-text;
+margin-top: -6.5rem;
+margin-left: 0.7rem;
+}
+
+a{
+    text-decoration: none;
+color: $DefaultColor;
+}
+
+&_name{
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+&_name-title{
+    @include title-text;
+    font-size: 1.6rem;
+}
+    }
+    &__menu{
+        
+        margin-top: 2rem;
+        height: 8rem;
+
+        &_list{
+            
+            text-align: center;
+        }
+ol{
+    display: flex;
+    flex-direction: column;
+    
+    li{
+        list-style: none;
+    }
+}
+        a {
+            @include li;
+            font-size: 0.7rem;
+    
+            &:hover{
+                font-size: 0.9rem;
+                transition: .2s;
+             }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 1.5rem 1.5rem 0rem; 
+        height: 3rem;
+        
+        &_logo{
+            @include logo;
+        }
+    &_contact{
+        display: flex;
+        @include text-s;
+        align-items: center;
+        column-gap: 1rem;
+        a{
+            text-decoration: none;
+            color: $PrimaryColor;
+        }
+        i {cursor: pointer;
+            &:hover{
+               color: $SecondaryColor;
+            }}
+    }}
+}
+
+@media screen and (min-width: 780px) {
+    .footer{
+        &__cover{
+            
+            
+    &_general{
+       
+        height: 15rem;
+        
+    
+    
+    }
+    &_general-text{
+        @include text-xxl;
+        
+    }
+    
+    &_general-triangle-img{
+       
+       
+        width: 8rem;
+    }
+    
+    &_general-triangle-text{
+   
+        @include text-s;
+    margin-top: -9rem;
+    margin-left: 1.8rem;
+    }
+    
+    
+    
+    &_name{
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+    &_name-title{
+
+        font-size: 2.2rem;
+    }
+    &_name-text{
+
+        @include text-l;
+    }
+        }
+        &__menu{
+            
+            margin-top: 2rem;
+            height: 8rem;
+    
+           
+    
+            a {
+                
+                @include text-m;
+        
+                &:hover{
+                    @include text-l;
+
+                 }
+            }
+        }
+    
+        &__nav {
+            
+            height: 3rem;
+            
+            
+        &_contact{
+            
+            @include text-s;
+            
+            column-gap: 1rem;
+            
+           
+        }}
+    }
+}
+
+@media screen and (min-width: 1281px){
+    .footer{
+        &__cover{
+            &_name-title{
+        margin-left:8rem;
+            }
+            &_name-text{
+                
+                margin-left:8rem;
+            }
+        }
+    }
+}

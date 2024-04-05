@@ -1,0 +1,44 @@
+@mixin icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+@mixin div-relative{
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin img-absolute{
+    position: absolute;
+        z-index: -1;
+        opacity: 0.95;
+        filter: drop-shadow($MutedColor 10px 8px 10px);
+}
+
+@mixin triangle{
+    position: absolute;
+    width: 5rem;
+    z-index: -1;
+    cursor: pointer;
+}
+
+
+@mixin list{
+    display: grid;
+            grid-template-columns: 25% 75%;
+            align-items: center;
+            margin-top: 2rem;
+}
+
+
+
+@mixin list-column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+
+

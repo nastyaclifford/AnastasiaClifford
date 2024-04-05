@@ -1,0 +1,191 @@
+.project{
+    &__banner{
+    @include div-relative;
+    height:max-content;
+    margin: 2rem 1rem;
+    &_img{
+        @include img-absolute;
+        width: auto;
+        height: 20rem;
+        margin-left: 2rem;
+    }
+    &_text{
+        @include title-text;
+        text-shadow: none;
+        margin-top: 19.5rem;
+text-align: center;
+    }
+    &_links{
+        text-align: center;
+
+a{
+    padding: 0 0.5rem;
+    @include link;
+}
+    }
+    }
+    
+    &__info{
+        @include list-column;
+        width: 90%;
+        margin-left: 1rem;
+
+        &_about-text{
+            @include secondary-text;
+            margin: 1rem 0 0 3rem;
+        }
+
+    &_technologies-title{
+        color: $SecondaryColor;
+    }
+
+    &_technologies-list{
+        @include secondary-text;
+        font-weight: 600;
+        margin: 1rem 0 0 3rem;
+    }
+
+&_team-text{
+    @include secondary-text;
+    margin: 1rem 0 0 3rem;
+    }
+
+
+&_responsibilities-title{
+color: $SecondaryColor;
+}
+
+&_responsibilities-title-dark{
+    color:$PrimaryColor;
+}
+
+&_responsibilities-text{
+    ul{
+padding-left: 1rem;
+
+        li{
+            text-decoration: none;
+            list-style:square;
+            @include secondary-text;
+            margin-bottom: 1rem;
+            margin-left: 3rem;
+
+        }
+
+}
+    }
+    
+    }
+    
+
+    &__back{
+        text-align: center;
+        margin: 1rem;
+        &_link{
+
+        font-size: 0.6rem;
+        @include link;
+    }
+        }
+        
+    }
+.banner-wider{
+    height: 26rem;
+}
+
+@media screen and (min-width:780px) {
+    .project{
+        &__banner{
+        
+        &_img{
+            
+            height: 25rem;
+            margin-left: 8rem;
+        }
+        &_text{
+            
+            margin-top: 24.5rem;
+
+    font-size: 3rem;
+        }
+        &_links{
+        
+    
+    a{
+       
+        @include text-l;
+    }
+        }
+        }
+        
+        &__info{
+           
+    &_about-title{
+        @include text-l;
+    }
+            &_about-text{
+                
+                @include text-m;
+            }
+    
+        &_technologies-title{
+          
+            @include text-l;
+        }
+    
+        &_technologies-list{
+            @include text-m;
+        }
+    &_team-title{
+        @include text-l;
+    }
+    &_team-text{
+        
+        @include text-m;
+        }
+    
+    
+    &_responsibilities-title{
+
+        @include text-l;
+    }
+    
+    &_responsibilities-title-dark{
+      
+        @include text-l;
+    }
+    
+    &_responsibilities-text{
+        ul{
+  
+    
+            li{
+                
+                @include text-m;
+    
+            }
+    
+    }
+        }
+        
+        }
+        
+    
+        &__back{
+           
+            &_link{
+    
+                @include text-s;
+           
+        }
+            }
+            
+        }
+
+}
+
+@media screen and (min-width: 1281px){
+    .project{
+        margin-left: 8rem;
+    }
+}

@@ -1,0 +1,240 @@
+.projects{
+    margin: 5rem 1rem;
+    &__title{
+        font-weight: 500;
+        color: $SecondaryColor;
+
+        
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-left: 0.5rem;
+        row-gap: 3rem;
+       
+        &_item-name{
+            &::first-letter{
+                color:$SecondaryColor;
+            }
+        }
+        
+        &_item-img{
+            width: 10rem;
+            filter: grayscale(100%);
+            &:hover{
+                transition: filter 0.7s;
+                filter: grayscale(0%);
+            }
+        }
+        &_item-details{
+            text-decoration: none;
+            color: $PrimaryColor;
+            margin-left: 1rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            &:hover{
+                transition: .2s;
+                font-weight: 600;
+                transform: scale(1.1);
+                color:$SecondaryColor;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    .projects{
+
+        &__list{
+           
+           
+            &_item-name{
+                font-size: 0.8rem;
+            }
+            &_item-img{
+                width: 7rem;
+                
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .projects{
+
+        &__list{
+           
+           
+            
+            &_item-img{
+                width: 12rem;
+                
+            }
+            
+        }
+    }
+} 
+
+@media screen and (min-width: 510px) {
+    .projects{
+
+        &__list{
+ 
+            &_item-img{
+                width: 14rem;
+                
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .projects{
+
+        &__list{     
+            
+            &_item-img{
+                width: 16rem;
+                
+            }
+            
+        }
+    }
+} 
+
+@media screen and (min-width: 650px) {
+    .projects{
+
+        &__list{     
+            
+            &_item-img{
+                width: 17rem;
+                
+            }
+            
+        }
+    }
+} 
+
+@media screen and (min-width: 700px) {
+    .projects{
+
+        &__list{     
+            
+            &_item-img{
+                width: 18rem;
+                
+            }
+            
+        }
+    }
+} 
+
+@media screen and (min-width: 820px) {
+    .projects{
+&__title{
+    @include text-xl;
+}
+        &__list{
+            
+align-items: end;
+
+grid-template-columns: 24% 24% 24% 24%;
+            margin-left: 0.5rem;
+           
+            &_item-name{
+                @include text-m;
+
+            }
+            &_item-img{
+                width: 11rem;
+                
+            }
+
+            &_item-details{
+                @include text-s;
+            }
+            
+        }
+    }
+} 
+
+@media screen and (min-width: 1000px){
+    .projects{
+        
+                &__list{
+                    
+                   
+                    
+                    &_item-img{
+                        width: 13rem;
+                        
+                    }
+        
+                    
+                    
+                }
+            }
+}
+
+@media screen and (min-width: 1160px){
+    .projects{
+                &__list{
+                    
+                   
+                    
+                    &_item-img{
+                        width: 14rem;
+                        
+                    }
+        
+                    
+                    
+                }
+            }
+}
+
+@media screen and (min-width: 1281px){
+    .projects{
+        margin-left: 8rem;
+        &__list{
+            
+                        &_item-img{
+                            width: 15rem;
+                            
+                        }
+            
+                        
+                    }
+    }
+}
+
+@media screen and (min-width: 1450px){
+    .projects{
+        &__list{
+            
+                        &_item-img{
+                            width: 17rem;
+                            
+                        }
+            
+                        
+                    }
+    }
+}
+
+@media screen and (min-width: 1650px){
+    .projects{
+        &__list{
+            
+                        &_item-img{
+                            width: 20rem;
+                            
+                        }
+            
+                        
+                    }
+    }
+}

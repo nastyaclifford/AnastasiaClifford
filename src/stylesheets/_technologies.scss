@@ -1,0 +1,87 @@
+.technologies{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0rem 1.5rem;
+    &__title{
+        @include secondary-text;
+        font-weight: 400;
+    }
+    &__list{
+        @include list-column;
+        margin-left: 2rem;
+        &_row{
+            display: flex;
+            column-gap: 1rem;
+        }
+        &_points{
+            color: $SecondaryColor;
+        }
+        &_item{
+            display: flex;
+            flex-direction: column;
+        }
+        &_item-details{
+            @include secondary-text;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (min-width: 780px){
+    .technologies{
+        margin: 0rem 1.5rem;
+        &__title{
+            
+            @include text-m;
+        }
+        &__list{
+            
+           
+           
+            &_item-name{
+                @include text-l;
+            }
+            &_item-details{
+                
+                @include text-m;
+            }
+        }
+    }
+}
+@media screen and (min-width: 970px){
+    .technologies{
+        margin: 1.5rem;
+        
+    }
+}
+@media screen and (min-width: 1105px){
+    .technologies{
+        margin: -4rem 1.5rem;
+        
+    }
+}
+@media screen and (min-width: 1200px){
+    .technologies{
+        margin: -2rem 1.5rem;
+        
+    }
+}
+@media screen and (min-width: 1281px){
+    .technologies{
+        margin-left: 8rem;
+    }
+}
+@media screen and (min-width: 1300px){
+    .technologies{
+        margin: 0rem 1.5rem 0rem 8rem;
+        
+    }
+}
+
+@media screen and (min-width: 1550px){
+    .technologies{
+        margin: 2rem 1.5rem 0rem 8rem;
+        
+    }
+}

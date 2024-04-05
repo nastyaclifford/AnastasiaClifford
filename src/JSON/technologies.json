@@ -1,0 +1,22 @@
+[{
+    "name":"Mark-up & Styling Languages",
+"details": "HTML5, CSS, SASS"
+},
+{
+    "name":"Client-Side scripting",
+"details": "JavaScript"
+},
+{
+    "name":"Frameworks & libraries",
+"details": "ReactJS, Bootstrap, tailwind css"
+},
+{
+    "name":"State Management",
+"details": "Mobx, redux"
+},
+{"name":"Integration with third-party Systems",
+"details": "rest Api"
+},
+{"name":"Version control & collaboration",
+"details": "Github, jira, trello, slack"
+}]

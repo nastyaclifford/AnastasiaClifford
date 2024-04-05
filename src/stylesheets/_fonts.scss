@@ -1,0 +1,79 @@
+@mixin logo{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+@mixin li{
+            list-style: none;
+            text-decoration: none;
+            color:  $PrimaryColor;
+            cursor: pointer;
+            &:hover{
+               color: $SecondaryColor;
+            }
+}
+
+@mixin text-s{
+    font-size:1rem;
+}
+
+@mixin text-m{
+    font-size:1.2rem;
+}
+
+@mixin main-text{
+    font-size: 1.3rem;
+}
+
+@mixin text-l{
+    font-size: 1.5rem;
+}
+
+@mixin text-xl{
+    font-size: 2rem;
+}
+
+@mixin text-xxl{
+    font-size: 3rem;
+}
+
+
+@mixin title-text{
+    font-size:2.8rem;
+    color: $SecondaryColor;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    margin-top: -0.1rem;
+    margin-bottom: -0.1rem;
+    line-height: 2.4rem;
+}
+
+@mixin triangle-text{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    width: 3rem;
+    color: $DefaultColor;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        transition: .2s;
+        transform: scale(1.3);
+     }
+}
+
+
+@mixin secondary-text{
+    font-size: 0.8rem;
+}
+
+@mixin secondary-text-title
+{font-size: 0.8rem;}
+
+@mixin link{
+    text-decoration: none;
+        color: $MutedColor;
+        cursor: pointer;
+         &:hover{
+       color: $SecondaryColor;
+       font-weight: 600;}
+}
+
+

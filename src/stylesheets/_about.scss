@@ -1,0 +1,277 @@
+.about{
+    &__banner{
+    @include div-relative;
+    height:16rem;
+    margin-left: 1rem;
+    &_img{
+        @include img-absolute;
+        width: auto;
+        height: 100%;
+    }
+    &_text{
+        margin-top: 6rem;
+        text-align: center;
+        width: 27rem;
+    }
+
+        &_text-general{
+            font-weight: 500;
+        }
+
+        &_text-main{
+            @include title-text;
+            font-weight: 600;
+        }
+    }
+    &__info{
+        @include list-column;
+        width: 90%;
+        margin: 2rem 1.5rem;
+        row-gap: 2rem;
+
+        &_intro{
+            @include list;
+        }
+        &_intro-title{
+            @include secondary-text-title;
+        }
+        &_intro-text{
+            @include secondary-text;
+            @include list-column;
+        }
+
+    &_experience{
+            @include list;
+    }
+
+    &_experience-list{
+       @include list-column;
+        
+    }
+&_experience-title{
+    @include secondary-text-title;
+}
+    &_experience-text{
+        @include secondary-text;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        align-items: center;
+
+    }
+    
+    &_experience-job-company{
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+    &_experience-text-term{
+        color:$SecondaryColor;
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+    &_hobbys{
+            @include list;
+           
+    }
+
+    &_hobbys-title{
+        @include secondary-text-title;
+    }
+&_hobbys-text{
+    @include secondary-text;
+        @include list-column;
+}
+    }
+    }
+
+    @media screen and (max-width: 360px){
+        .about{
+            &__banner{
+            &_text{
+                width: 50%;
+                margin-left: 5rem;
+            }
+            &_text-general{
+                @include text-s;
+            }
+            &_text-main{
+                @include text-xl;
+            }
+                }
+                
+            
+            
+            }
+    }
+    @media screen and (min-width: 500px){
+        .about{
+            margin-left: 4rem;
+            &__banner{
+                &_text{
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 700px){
+        .about{
+            &__info{
+                &_intro{
+                    grid-template-columns: 18% 82%;
+                }
+            &_experience{
+               grid-template-columns: 18% 82%;
+            }
+            &_hobbys{  
+               grid-template-columns: 18% 82%;
+            }
+            }
+            }
+        
+    }
+    @media screen and (min-width: 780px) {
+        .about{
+            &__banner{
+            height:20rem;
+            margin-left: 4rem;
+            &_text{
+                margin-left: 5rem;
+            }
+            &_text-general{
+                @include text-xl;
+            }
+            &_text-main{
+                @include text-xxl;
+            }
+                }
+                
+            
+            &__info{
+                &_intro{
+                    grid-template-columns: 24% 76%;
+                }
+                &_intro-title{
+                    @include text-l;
+                }
+                &_intro-text{
+                    @include text-m;
+                }
+        
+            &_experience{
+                    grid-template-columns: 24% 76%;
+            }
+        
+           
+        &_experience-title{
+            @include text-l;
+        }
+            &_experience-text{
+                grid-template-columns: 80% 20%;
+                @include text-m;
+            }
+            
+            &_experience-job-company{
+                @include text-s;
+            }
+            &_experience-text-term{
+                @include text-s;
+            }
+            &_hobbys{
+                    grid-template-columns: 24% 76%;
+            }
+            &_hobbys-title{
+                @include text-l;
+            }
+        &_hobbys-text{
+
+            @include text-m;
+        }
+            }
+            }
+        }
+
+        @media screen and (min-width: 900px){
+            .about{
+                margin-left: 4rem;
+                &__banner{
+                    &_text{
+                   
+                        margin-left: 5rem;
+        
+                    }
+                }
+               
+            }
+        }
+
+        @media screen and (min-width: 1000px){
+            .about{
+             
+                &__info{
+                    &_experience-text{
+                
+                        grid-template-columns: 65% 35%;
+                        align-items: start;
+
+    
+                        
+                
+                    }
+                }
+            }
+        }
+
+        
+        @media screen and (min-width: 1100px){
+            .about{
+                margin-left: 8rem;
+                &__banner{
+                    &_text{
+                   
+                        margin-left: 5rem;
+        
+                    }
+                }
+
+               
+            }
+        }
+
+        @media screen and (min-width: 1281px){
+            .about{
+                margin-left: 12rem;
+
+                &__info{
+                
+        
+                    &_intro{
+                        
+                        grid-template-columns: 20% 80%;
+                    }
+                    
+            
+                &_experience{
+                        
+                        grid-template-columns: 20% 80%;
+                }
+
+                &_experience-text{
+                
+                    grid-template-columns: 60% 40%;
+
+                    
+            
+                }
+            
+               
+            
+                &_hobbys{
+    
+                        grid-template-columns: 20% 80%;
+                       
+                }
+            
+              
+                }
+            }
+        }

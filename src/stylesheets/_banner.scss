@@ -1,0 +1,535 @@
+.banner {
+    @include div-relative;
+    height:20rem;
+    &__img {
+        @include img-absolute;
+        top: 3rem;
+        width: 100%;
+        height: auto;
+        transform: scale(2);
+    }
+
+    &__title{
+        display:flex;
+        flex-direction: column;
+        width: 70%;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        &_main-text{
+            @include main-text;
+        }
+        &_title-text{
+            @include title-text;
+            
+        }
+    }
+
+
+    &__triangle{
+        @include triangle;
+
+        margin-left: 11rem;
+        
+
+        &_text{
+            @include triangle-text;
+            margin-left: 11.8rem;
+            
+        }
+        
+    }
+    a{
+        text-decoration: none;
+        color: $DefaultColor;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .banner {
+
+        height:20rem;
+     
+    
+        &__title{
+            display:flex;
+            flex-direction: column;
+            width: 70%;
+            margin-top: 3rem;
+            margin-left: 1rem;
+            &_main-text{
+                @include text-s;
+            }
+            &_title-text{
+                @include text-xl;
+                
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 495px) {
+    .banner {
+        height: 23rem;
+}
+}
+
+@media screen and (min-width: 500px) {
+    .banner {
+        &__triangle{
+            margin-left: 16rem;
+            margin-top: 1.5rem;
+            &_text{
+                margin-left: 16.5rem;
+                margin-top: 2.2rem;
+            }
+        }
+    }
+}
+
+        @media screen and (min-width: 540px) {
+            .banner {
+                &__triangle{
+                    margin-left: 18rem;
+                    &_text{
+                        margin-left: 18.5rem;
+                    }
+                }
+    }
+
+}
+
+@media screen and (min-width: 610px) {
+    .banner {
+        height: 25rem;
+        &__triangle{
+            margin-left: 20rem;
+            margin-top: 3rem;
+            &_text{
+                margin-left: 20.5rem;
+                margin-top: 4rem;
+            }
+        }
+}
+}
+@media screen and (min-width: 670px) {
+    .banner {
+        height: 27rem;
+        &__title{
+            margin-top: 5rem;
+        }
+        &__triangle{
+            margin-left: 22rem;
+            margin-top: 3rem;
+            &_text{
+                margin-left: 22.5rem;
+                margin-top: 4rem;
+            }
+            
+        }
+
+}
+}
+
+@media screen and (min-width: 737px) {
+    .banner {
+        height: 28rem;
+        &__title{
+            margin-top: 7rem;
+        }
+        &__triangle{
+            margin-left: 24rem;
+            margin-top: 5rem;
+            &_text{
+                margin-left: 24.5rem;
+                margin-top: 6rem;
+            }
+            
+        }
+
+}
+}
+@media screen and (min-width: 780px) {
+    .banner {
+        height:25rem;
+        &__img {
+            filter: drop-shadow(hsl(0, 5%, 66%) 10px 4px 4px);
+            top: 1rem;
+            transform: scale(1.6);
+        }
+    
+       
+        &__title{
+            margin-top: 2rem;
+            width: 50%;
+            &_main-text{
+                @include text-xl;
+            }
+            &_title-text{
+                @include text-xxl;
+            }
+        }
+    
+        &__triangle{
+            margin-left: 25rem;
+            margin-top: -1rem;
+            width: 8rem;
+            &_text{
+                margin-left: 27rem;
+                margin-top: 1.5rem;
+                @include text-s;
+            }
+            
+        }
+        
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .banner {
+        &__triangle{
+            margin-left: 28rem;
+            margin-top: 1rem;
+
+            &_text{
+                margin-left: 30rem;
+                margin-top: 2.5rem;
+            }
+            
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 972px) {
+    .banner {
+        height:29rem;
+        &__title{
+     margin-top: 5rem;
+     margin-left: 3rem;
+        }
+    
+        &__triangle{
+            margin-left: 30rem;
+
+            
+    
+            &_text{
+               
+                margin-left: 32rem;
+
+                
+            }
+            
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
+    .banner {
+    
+        &__triangle{
+
+            margin-left: 33rem;
+
+            
+    
+            &_text{
+               
+                margin-left: 35rem;
+
+                
+            }
+            
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 1105px) {
+    .banner {
+            height:27rem;
+    
+            &__img{
+                top: -2rem;
+                transform:(scale(1));
+            }
+
+        &__triangle{
+
+            margin-left: 34rem;
+margin-top: -1rem;
+
+            &_text{
+               
+                margin-left: 36rem;
+margin-top: 1rem;
+
+            }
+            
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 1210px) {
+    .banner {
+            
+
+        &__triangle{
+
+            margin-left: 36rem;
+
+            &_text{
+               
+                margin-left: 38rem;
+
+
+            }
+            
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 1281px) {
+    .banner {
+
+        &__title{
+            margin-left: 8rem;
+        }
+        &__triangle{
+
+            margin-left: 39rem;
+            margin-top: 1rem;
+
+
+            &_text{
+               
+                margin-left: 41rem;
+                margin-top: 3rem;
+    
+
+            }
+            
+        }
+        
+    }
+
+}
+
+
+@media screen and (min-width: 1370px) {
+    .banner {
+
+        
+        &__triangle{
+
+            margin-left: 42rem;
+
+
+            &_text{
+               
+                margin-left: 44rem;
+
+    
+
+            }
+            
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 1451px) {
+    .banner {
+
+
+        &__triangle{
+margin-left: 46rem;
+            margin-top: 2rem;
+            
+                        &_text{
+
+                            margin-left: 48rem;
+                            margin-top: 3rem;
+            
+                        }
+                        
+                    }
+                    
+        
+    }
+
+}
+
+@media screen and (min-width: 1513px) {
+    .banner {
+        height: 30rem;
+    }}
+@media screen and (min-width: 1540px) {
+    .banner {
+
+
+        &__triangle{
+margin-left: 48rem;
+            margin-top: 4rem;
+            
+                        &_text{
+
+                            margin-left: 50rem;
+                            margin-top: 6rem;
+            
+                        }
+                        
+                    }
+                    
+        
+    }
+
+}
+
+@media screen and (min-width: 1569px) {
+    .banner {
+
+
+        &__title{
+            
+
+            margin-top: 10rem;
+
+
+                   
+                   
+               }
+
+        &__triangle{
+
+            margin-left: 48rem;
+            margin-top: 1rem;
+            
+                        &_text{
+                           
+                            margin-left: 50rem;
+                            margin-top: 3rem;
+                        }
+                        
+                    }
+                    
+        
+    }
+
+}
+
+@media screen and (min-width: 1650px) {
+    .banner {
+        height: 32rem;
+        &__triangle{
+
+            margin-left: 52rem;
+
+            
+                        &_text{
+                           
+                            margin-left: 54rem;
+                        }
+                        
+                    }
+                    
+        
+    }
+
+}
+
+@media screen and (min-width: 1720px) {
+    .banner {
+
+        &__img{
+            top: -4rem;
+
+        }
+        &__title{
+
+                
+                &_main-text{
+
+                    font-size: 2.5rem;
+                }
+                &_title-text{
+
+                    font-size: 4.5rem;
+                    
+                }    
+               }
+
+        &__triangle{
+
+            margin-left: 54rem;
+            
+                        &_text{
+                           
+                            margin-left: 56rem;
+            
+            
+                        }
+                        
+                    }
+                    
+        
+    }
+
+}
+
+@media screen and (min-width: 1827px) {
+    .banner {
+height: 33rem;
+        &__triangle{
+
+            margin-left: 58rem;
+            margin-top: 2rem;
+            
+                        &_text{
+                           
+                            margin-left: 60rem;
+                            margin-top: 4rem;
+            
+                        }
+                        
+                    }
+                    
+        
+    }
+
+}
+
+@media screen and (min-width: 1910px) {
+    .banner {
+height: 34rem;
+        &__triangle{
+
+            margin-left: 60.5rem;
+
+            
+                        &_text{
+                           
+                            margin-left: 62.5rem;
+
+            
+                        }
+                        
+                    }
+                    
+        
+    }
+
+}
+
