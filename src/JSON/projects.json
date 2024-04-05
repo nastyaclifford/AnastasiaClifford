@@ -1,25 +1,25 @@
 [{
     "name":"SmartDietTrack",
-"img": "/src/images/SDT.png",
+"img": "src/images/SDT.png",
 "alt":"SmartDietTrack",
-"url":"/smartdiettrack.html"
+"url":"smartdiettrack.html"
 },
 {
     "name":"Simple",
-"img": "/src/images/SIM.png",
+"img": "src/images/SIM.png",
 "alt":"Simple",
-"url":"/simple.html"
+"url":"simple.html"
 },
 {
     
 "name":"Business Consulting",
-"img": "/src/images/BC.png",
+"img": "src/images/BC.png",
 "alt":"Business Consulting",
-"url":"/consulting.html"
+"url":"consulting.html"
 },
 {
     "name":"SAVED",
-"img": "/src/images/SAV.png",
+"img": "src/images/SAV.png",
 "alt":"SAVED",
-"url":"/saved.html"
+"url":"saved.html"
 }]
