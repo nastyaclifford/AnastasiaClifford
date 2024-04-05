@@ -82,7 +82,7 @@ window.addEventListener("click", function (e) {
 //technologies section
 
 const getTechnologies = () => {
-  return fetch("src/JSON/technologies.json")
+  return fetch("../src/JSON/technologies.json")
     .then((response) => response.json())
     .catch((error) => console.log(error.message));
 };
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /// projects section
 
 const getProjects = () => {
-  return fetch("src/JSON/projects.json")
+  return fetch("../src/JSON/projects.json")
     .then((response) => response.json())
     .catch((error) => console.log(error.message));
 };
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /// experience section
 
 const getExperiences = () => {
-  return fetch("src/JSON/experience.json")
+  return fetch("../src/JSON/experience.json")
     .then((response) => response.json())
     .catch((error) => console.log(error.message));
 };
