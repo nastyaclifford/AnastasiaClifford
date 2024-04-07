@@ -1,6 +1,8 @@
 @mixin logo{
     font-size: 1.3rem;
     cursor: pointer;
+    color: $PrimaryColor;
+
 }
 @mixin li{
             list-style: none;

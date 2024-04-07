@@ -14,6 +14,9 @@ header{
     
     &__logo{
         @include logo;
+        a{
+            text-decoration: none;
+        }
     }
     &__icon{
         cursor: pointer;

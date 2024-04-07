@@ -6,6 +6,7 @@
     &__title{
         @include secondary-text;
         font-weight: 400;
+
     }
     &__list{
         @include list-column;

@@ -3,7 +3,7 @@
     height:20rem;
     &__img {
         @include img-absolute;
-        top: 3rem;
+        top: 1rem;
         width: 100%;
         height: auto;
         transform: scale(2);
