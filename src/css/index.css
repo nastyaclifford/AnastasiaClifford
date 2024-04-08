@@ -550,6 +550,13 @@ header {
   filter: grayscale(0%);
   color: hsla(180, 74%, 33%, 0.87);
 }
+.projects__list_item-link:active {
+  transition: 0.2s;
+  font-weight: 600;
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  color: hsla(180, 74%, 33%, 0.87);
+}
 .projects__list_item-name::first-letter {
   color: hsla(180, 74%, 33%, 0.87);
 }

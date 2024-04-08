@@ -23,10 +23,13 @@
                 transform: scale(1.1);
                 filter: grayscale(0%);
                 color:$SecondaryColor;
-
-               
-                
-               
+            }
+            &:active{
+                transition: .2s;
+                font-weight: 600;
+                transform: scale(1.1);
+                filter: grayscale(0%);
+                color:$SecondaryColor;
             }
         }
        
@@ -35,9 +38,6 @@
                 color:$SecondaryColor;
             }
         }
-        
-        
-        
         
         &_item-img{
             width: 10rem;
