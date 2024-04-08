@@ -11,6 +11,24 @@
         grid-template-columns: 50% 50%;
         margin-left: 0.5rem;
         row-gap: 3rem;
+
+        &_item-link{
+            text-decoration: none;
+            filter: grayscale(100%);
+            color: $PrimaryColor;
+            
+            &:hover{
+                transition: .2s;
+                font-weight: 600;
+                transform: scale(1.1);
+                filter: grayscale(0%);
+                color:$SecondaryColor;
+
+               
+                
+               
+            }
+        }
        
         &_item-name{
             &::first-letter{
@@ -18,27 +36,19 @@
             }
         }
         
+        
+        
+        
         &_item-img{
             width: 10rem;
-            filter: grayscale(100%);
-            &:hover{
-                transition: filter 0.7s;
-                filter: grayscale(0%);
-            }
-        }
-        &_item-details{
-            text-decoration: none;
-            color: $PrimaryColor;
+           
+        } 
+      &_item-details{
+            
             margin-left: 1rem;
             font-size: 0.8rem;
-            cursor: pointer;
-            &:hover{
-                transition: .2s;
-                font-weight: 600;
-                transform: scale(1.1);
-                color:$SecondaryColor;
-            }
-        }
+           
+        } 
     }
 }
 

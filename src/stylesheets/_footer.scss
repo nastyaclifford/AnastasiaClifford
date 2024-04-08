@@ -37,12 +37,40 @@ color: $DefaultColor;
 
 &_name{
     margin-left: 1rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 &_name-title{
     @include title-text;
     font-size: 1.6rem;
 }
+    }
+
+    &__contacts{
+        text-align: center;
+        margin-left: 1rem;
+    margin-top: 1rem;
+   
+    &_links{
+        display: flex;
+       
+        @include text-m;
+        align-items: center;
+        column-gap: 1rem;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: $PrimaryColor;
+        }
+        i {cursor: pointer;
+            &:hover{
+               color: $SecondaryColor;
+            }} 
+    }
+    &_items{
+        @include text-s;
+
+    }
+        
     }
     &__menu{
         
@@ -130,9 +158,10 @@ ol{
     
     
     
+
     &_name{
         margin-left: 1rem;
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
     &_name-title{
 
@@ -142,6 +171,14 @@ ol{
 
         @include text-l;
     }
+        }
+        &__contacts{
+            &_links{
+                @include text-l;
+            }
+            &_items{
+                @include text-l;
+            }
         }
         &__menu{
             

@@ -8,6 +8,24 @@ const container = document.querySelector(".container");
 
 //scroll
 
+function setupSmoothScroll() {
+  // Smooth scroll when clicking on anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      var target = this.getAttribute("href");
+      var duration = 1000; // Duration of the smooth scroll animation in milliseconds
+      smoothScroll(target, duration);
+    });
+  });
+}
+
+// Call the function to set up smooth scroll behavior when the DOM content is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  setupSmoothScroll();
+});
+
+// Smooth scroll function
 function smoothScroll(target, duration) {
   var targetElement = document.querySelector(target);
   var targetPosition = targetElement.offsetTop;
@@ -33,16 +51,6 @@ function smoothScroll(target, duration) {
 
   requestAnimationFrame(animation);
 }
-
-// Smooth scroll when clicking on anchor links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    var target = this.getAttribute("href");
-    var duration = 1000; // Duration of the smooth scroll animation in milliseconds
-    smoothScroll(target, duration);
-  });
-});
 
 //nav menu open
 
@@ -134,21 +142,26 @@ const createProjectsList = (projects) => {
     const projectItemName = document.createElement("div");
     projectItemName.className = "projects__list_item-name";
     projectItemName.textContent = project.name;
+    const itemLink = document.createElement("a");
+    itemLink.className = "projects__list_item-link";
+    itemLink.href = project.url;
     const imgDiv = document.createElement("div");
+
     imgDiv.classList = "projects__list_item-imgDiv";
     const itemImg = document.createElement("img");
     itemImg.src = project.img;
     itemImg.classList = "projects__list_item-img";
     itemImg.alt = project.alt;
-    const projectDetails = document.createElement("a");
+    const projectDetails = document.createElement("div");
     projectDetails.className = "projects__list_item-details";
-    projectDetails.href = project.url;
+    //projectDetails.href = project.url;
     projectDetails.textContent = "Learn More";
 
     projectItem.append(projectItemName);
-    projectItem.append(imgDiv);
+    projectItem.append(itemLink);
+    itemLink.append(imgDiv);
     imgDiv.append(itemImg);
-    projectItem.append(projectDetails);
+    itemLink.append(projectDetails);
     projectsList.appendChild(projectItem);
   });
 };

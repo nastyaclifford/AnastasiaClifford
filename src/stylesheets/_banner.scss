@@ -81,7 +81,7 @@
             margin-top: 1.5rem;
             &_text{
                 margin-left: 16.5rem;
-                margin-top: 2.2rem;
+                margin-top: 2.5rem;
             }
         }
     }
@@ -195,7 +195,7 @@
 
             &_text{
                 margin-left: 30rem;
-                margin-top: 2.5rem;
+                margin-top: 3rem;
             }
             
         }
@@ -361,7 +361,7 @@ margin-left: 46rem;
                         &_text{
 
                             margin-left: 48rem;
-                            margin-top: 3rem;
+                            margin-top: 4rem;
             
                         }
                         
@@ -372,10 +372,18 @@ margin-left: 46rem;
 
 }
 
-@media screen and (min-width: 1513px) {
+@media screen and (min-width: 1500px) {
     .banner {
         height: 30rem;
+        &__triangle{
+                                    &_text{
+                                        margin-top: 4.5rem;
+                        
+                                    }
+                                    
+                                }
     }}
+
 @media screen and (min-width: 1540px) {
     .banner {
 
